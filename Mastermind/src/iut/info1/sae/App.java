@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 import javax.swing.*;
 import java.awt.event.*;
 
+import iut.info1.sae.mainscene.MainSceneController;
+
 
 public class App extends Application {
 
@@ -32,8 +34,6 @@ public class App extends Application {
         primaryStage.setTitle("MasterMind");
         primaryStage.setScene(scene);
         primaryStage.show();
-
-        
 
         /* 
         // Color black = Color.BLACK;      // permet de définir la couleur du fond de la page qui s'ouvre. Ex : ici elle est noir 
