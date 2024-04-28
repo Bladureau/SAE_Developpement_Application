@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnReprendre" layoutX="70.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnReprendreClicked" prefHeight="81.0" prefWidth="179.0" text="Reprendre une partie" />
+      <Button fx:id="btnCommencer" layoutX="380.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnCommencerClicked" prefHeight="81.0" prefWidth="179.0" text="Commencer un nouvelle partie" />
+   </children>
+</AnchorPane>

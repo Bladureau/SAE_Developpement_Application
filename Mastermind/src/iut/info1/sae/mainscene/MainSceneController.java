@@ -1,3 +1,5 @@
+package iut.info1.sae.mainscene;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,16 +14,16 @@ import javax.swing.*;
 public class MainSceneController {
 
     @FXML
-    private Button btnAmi;
+    protected Button btnAmi;
 
     @FXML
-    private Button btnOrdi;
+    protected Button btnOrdi;
 
     @FXML
-    private Button btnCommencer;
+    protected Button btnCommencer;
 
     @FXML
-    private Button btnReprendre;
+    protected Button btnReprendre;
 
     @FXML
     void btnAmiClicked(ActionEvent event) throws IOException {

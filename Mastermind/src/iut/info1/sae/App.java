@@ -1,3 +1,5 @@
+package iut.info1.sae;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.paint.Color;
@@ -7,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.StageStyle;
 import javafx.stage.Stage;
+import javax.swing.*;
+import java.awt.event.*;
 
 
 public class App extends Application {
@@ -43,4 +47,17 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+    /*
+    private class Clicklistener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            if (e.getSource() == btnCommencer) {
+                label.setText("Bouton 1 clicked!");
+            }
+            if (e.getSource() == button2) {
+                label.setText("Bouton 2 clicked!");
+            }
+        }
+    }
+    */
 }
