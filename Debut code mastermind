@@ -1,0 +1,45 @@
+// TODO :  faire le class et tout ça
+
+// TODO : definir toutes les couleurs
+// initialisation des constantes
+final int TAILLE_COMBINAISON = 4;
+final int NOMBRE_MAX_DE_COUP = 12;
+
+// initialisation des variables
+int nbDeCoup = 0;
+int nbDeManche = 0;
+int nbDeCouleurMalPlace;
+int nbDeCouleurBienPlace;
+String[TAILLE_COMBINAISON] combinaisonCouleurJ2;
+boolean finPartie = false;
+
+
+// combinaison que le joueur 1 choisi
+String[TAILLE_COMBINAISON] combinaisonCouleurJ1 = {"bleu", "rose", "blanc", "bleu"};
+// le tableau de base devra etre vide et c'est le joueur qu choisira les couleurs
+
+while (!finPartie) {
+    // Selection des couleurs pour le J2
+    // TODO : selectionner les couleurs en cochant les cases dans une liste deroulante sur chaque cases vide 
+    
+    // a suprimer des que le TODO du dessus est fait
+    combinaisonCouleurJ2 = {"blanc", "rouge", "rose", "bleu"}
+    
+    // verification de la combinaison
+    for (int i = 0
+
+
+    // verification d'une potentielle fin de manche
+    if (nbDeCouleurBienPlace = TAILLE_COMBINAISON) {
+        finPartie = true;
+    } else {
+        nbDeCoup++;
+        if (nbDeCoup==NOMBRE_MAX_DE_COUP) {
+            finPartie = true;
+        }
+    }
+        
+}
+
+
+
