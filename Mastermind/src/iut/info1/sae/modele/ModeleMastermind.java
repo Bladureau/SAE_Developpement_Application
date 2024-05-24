@@ -2,7 +2,7 @@ package iut.info1.sae.modele;
 
 public class ModeleMastermind {
 
-    private static final String[] COULEURS = {"Bleu","Rouge","Vert","Jaune","Rose","Blanc","Violet","Gris","Orange","Marron"};
+    private static final String[] COULEURS = {""};
 
     public static void main(String[] args) {
         // TODO : definir toutes les couleurs
@@ -30,9 +30,9 @@ public class ModeleMastermind {
         combinaisonCouleurJ1[3] = "bleu";
 
         // le tableau de base devra etre vide et c'est le joueur qu choisira les couleurs
-        /*
+/*
         while (!finPartie) {
-        */
+*/
             // initialisation du tampon des couleurs du j1 pour travailler dessus sans modifier le reel code couleur
             tamponCombinaisonCouleurJ1 = combinaisonCouleurJ1;
         
@@ -48,47 +48,47 @@ public class ModeleMastermind {
 
             //verification des 2 codes couleur ...
             // ... bonne couleur et bien place
-            //System.out.println("verification des bonnes couleurs bien place : ");
+            System.out.println("verification des bonnes couleurs bien place : ");
             for(i = 0; i<TAILLE_COMBINAISON; i++){
-                //System.out.println("verification de la " + i+1 + "eme couleur");
+                System.out.println("verification de la " + i + "eme couleur");
                 if (combinaisonCouleurJ1[i] == combinaisonCouleurJ2[i]) {
-                    //System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est bien place");
+                    System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est bien place");
                     combinaisonCouleurJ2[i] = null;
                     tamponCombinaisonCouleurJ1[i] = null;
                     nbDeCouleurBienPlace[nbDeCoup]++;
                 } else {
-                    //System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est fausse");
+                    System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est fausse");
                 }
-                //System.out.println("nombre de couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup] + " \nfin de la " + i+1 + "eme couleur");
+                System.out.println("nombre de couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup] + " \nfin de la " + i + "eme couleur");
             }
             // ... bonne couleur mais mal place
-            //System.out.println("verification des bonnes couleurs mal place : ");
+            System.out.println("verification des bonnes couleurs mal place : ");
             for(i = 0; i < TAILLE_COMBINAISON; i++){
-                //System.out.println("verification de la " + i+1 + "eme couleur");
+                System.out.println("verification de la " + i + "eme couleur");
                 if (combinaisonCouleurJ2[i] != null) {
                     for(int j = 0; j<TAILLE_COMBINAISON; j++){
-                        //System.out.println("comparaison de la " + combinaisonCouleurJ2[i] + " couleur avec toutes les couleurs du J1");
+                        System.out.println("comparaison de la " + combinaisonCouleurJ2[i] + "eme couleur avec toutes les couleurs du J1");
                         if (combinaisonCouleurJ2[i] == combinaisonCouleurJ1[j]) {
-                            //System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est presente");
+                            System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est presente");
                             combinaisonCouleurJ2[i] = null;
                             tamponCombinaisonCouleurJ1[j] = null;
                             nbDeCouleurMalPlace[nbDeCoup]++;
                         } else {
-                            //System.out.println("la couleur " + combinaisonCouleurJ2[i] + " n'est pas presente");
+                            System.out.println("la couleur " + combinaisonCouleurJ2[i] + " n'est pas presente");
                         }
                     }
                 } else {
-                    //System.out.println(combinaisonCouleurJ2[i] + "couleur deja verifie");
+                    System.out.println(combinaisonCouleurJ2[i] + "couleur deja verifie");
                 }
-                //System.out.println("nombre de bonne couleur mal place : " + nbDeCouleurMalPlace[nbDeCoup] + " \nfin de la " + i + "eme couleur");
+                System.out.println("nombre de bonne couleur mal place : " + nbDeCouleurMalPlace[nbDeCoup] + " \nfin de la " + i + "eme couleur");
             }
 
-            //System.out.println("couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup]);
-            //System.out.println("couleur mal place : " + nbDeCouleurMalPlace[nbDeCoup] + " \nfin de la verification");
+            System.out.println("couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup]);
+            System.out.println("couleur mal place : " + nbDeCouleurMalPlace[nbDeCoup] + " \nfin de la verification");
 
 
             
-            /*
+/*
             // verification d'une potentielle fin de manche
             if (nbDeCouleurBienPlace[nbDeCoup] == TAILLE_COMBINAISON) {
                 finPartie = true;
@@ -99,8 +99,8 @@ public class ModeleMastermind {
                 }
             }
         }
-            */
+*/
             
-                
+            
     }
 }

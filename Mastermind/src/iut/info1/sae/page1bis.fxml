@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox fx:id="page1bisVBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iut.info1.sae.controleur.ControleurPage1bis">
+<VBox fx:id="page1bisVBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iut.info1.sae.controleur.ControleurPage1bis">
    <children>
-      <HBox fx:id="buttonJouerHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+      <HBox alignment="BOTTOM_CENTER" prefHeight="97.0" prefWidth="543.0">
          <children>
-            <Button fx:id="btnReprendrePartie" mnemonicParsing="false" onAction="#btnReprendrePartie" text="Reprendre une partie " />
-            <Button fx:id="btnCommencerPartie" mnemonicParsing="false" onAction="#btnCommencerPartie" text="Commencer une partie" />
+            <Label style="-fx-font-weight: BOLD;" text="Une partie est en cours. ">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
          </children>
       </HBox>
-      <HBox fx:id="buttonRetourHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="543.0">
          <children>
-            <Button fx:id="btnRetour" mnemonicParsing="false" onAction="#btnRetour" text="Retourner au menu précédent" />
+            <Label prefHeight="31.0" prefWidth="273.0" style="-fx-font-weight: BOLD;" text="Voulez-vous la continuez ?">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="buttonJouerHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="120.0">
+         <children>
+            <Button fx:id="btnReprendrePartie" mnemonicParsing="false" onAction="#btnReprendrePartie" text="    Oui     " />
+            <Button fx:id="btnNePasContinuezLaPartie" mnemonicParsing="false" onAction="#btnNePasContinuezLaPartie" text="    Non    " />
+         </children>
+      </HBox>
+      <HBox fx:id="buttonRetourHBox" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnRetour" mnemonicParsing="false" onAction="#btnRetour" text="Menu précédent" />
          </children>
       </HBox>
    </children>

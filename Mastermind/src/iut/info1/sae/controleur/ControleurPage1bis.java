@@ -10,23 +10,27 @@ import javafx.scene.layout.VBox;
 public class ControleurPage1bis {
 
     @FXML
-    private VBox page1BisVBox;
+    private Button btnNePasContinuezLaPartie;
+
+    @FXML
+    private Button btnReprendrePartie;
+
+    @FXML
+    private Button btnRetour;
 
     @FXML
     private HBox buttonJouerHBox;
 
     @FXML
-    private Button btnReprendrePartie;
-    
-    @FXML
-    private Button btnCommencerPartie;
-
-    @FXML
     private HBox buttonRetourHBox;
 
     @FXML
-    private Button btnRetour;
+    private VBox page1bisVBox;
 
+    @FXML
+    void btnNePasContinuezLaPartie(ActionEvent event) {
+        Mastermind.activerPremiereTierPage();
+    }
 
     @FXML
     void btnReprendrePartie(ActionEvent event) {
@@ -34,13 +38,7 @@ public class ControleurPage1bis {
     }
 
     @FXML
-    void btnCommencerPartie(ActionEvent event) {
-        Mastermind.activerDeuxiemePage();
-    }
-
-    @FXML
     void btnRetour(ActionEvent event) {
         Mastermind.activerPremierePage();
     }
-
 }

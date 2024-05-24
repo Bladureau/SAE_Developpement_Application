@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox fx:id="vBoxAccueil" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
-fx:controller="iut.info1.sae.controleur.ControleurPage1">
+<VBox fx:id="vBoxAccueil" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="264.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iut.info1.sae.controleur.ControleurPage1">
 
    <children>
-      <HBox fx:id="hboxButton" alignment="CENTER" prefHeight="726.0" prefWidth="600.0" spacing="40.0">
+      <VBox fx:id="BoutonJouerVBox" alignment="CENTER" prefHeight="166.0" prefWidth="264.0" spacing="20.0">
          <children>
+            <Label fx:id="labelTitre" style="-fx-font-weight: BOLD;" text="Mastermind">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
       
-            <Button fx:id="btnJouerContreOrdi" mnemonicParsing="false" onAction="#btnJouerContreOrdi" text="Jouer contre un ordi" />
+                  <Button fx:id="btnJouerAmi" mnemonicParsing="false" onAction="#btnJouerAmi" text="Jouer avec un ami" />
       
-            <Button fx:id="btnJouerAmi" mnemonicParsing="false" onAction="#btnJouerAmi" text="Jouer avec un ami" />
+            <Button fx:id="btnJouerContreOrdi" mnemonicParsing="false" onAction="#btnJouerContreOrdi" text="Jouer avec une IA" />
          </children>
-      </HBox>
+      </VBox>
 
-      <HBox fx:id="quitterHbox" alignment="BOTTOM_RIGHT" prefHeight="335.0" prefWidth="600.0">
+      <HBox fx:id="quitterHbox" alignment="BASELINE_RIGHT" prefHeight="29.0" prefWidth="264.0">
          <children>
-            <Button fx:id="btnQuitterApp" mnemonicParsing="false" onAction="#btnQuitterApp" text="Quitter l'application" />
+            <Button fx:id="btnQuitterApp" alignment="CENTER" mnemonicParsing="false" onAction="#btnQuitterApp" prefHeight="26.0" prefWidth="69.0" text="Quitter" />
          </children>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
       </HBox>
    </children>
+   <opaqueInsets>
+      <Insets right="10.0" />
+   </opaqueInsets>
 </VBox>
