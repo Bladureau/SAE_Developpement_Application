@@ -12,6 +12,7 @@ public class ModeleMastermind {
     // initialisation des variables
     int nbDeCoup = 0;
     int nbDeManche = 0;
+    int i = 0;
     int[] nbDeCouleurMalPlace;
     int[] nbDeCouleurBienPlace;
     String[] combinaisonCouleurJ1 = new String[TAILLE_COMBINAISON];
@@ -43,17 +44,17 @@ public class ModeleMastermind {
         combinaisonCouleurJ2[3] = "rose";
 
 
-        //verification des 2 codes couleur
-        // bien placé
-        for(int i = 0; i<TAILLE_COMBINAISON-1; i++){
+        //verification des 2 codes couleur ...
+        // ... bien placé
+        for(i = 0; i<TAILLE_COMBINAISON-1; i++){
             if (combinaisonCouleurJ1[i] == combinaisonCouleurJ2[i]) {
                 combinaisonCouleurJ2[i] = null;
                 tamponCombinaisonCouleurJ1[i] = null;
                 nbDeCouleurBienPlace[nbDeCoup]++;
             }
         }
-        //mal placé
-        for(int i = 0; i<TAILLE_COMBINAISON-1; i++){
+        // ... mal placé
+        for(i = 0; i < TAILLE_COMBINAISON-1; i++){
             if (combinaisonCouleurJ2[i] != null) {
                 for(int j = 0; j<TAILLE_COMBINAISON-1; j++){
                     if (combinaisonCouleurJ2[i] == combinaisonCouleurJ1[j]) {
@@ -78,7 +79,7 @@ public class ModeleMastermind {
                 finPartie = true;
             }
         }
-        */
-            
     }
+        */        
 }
+
