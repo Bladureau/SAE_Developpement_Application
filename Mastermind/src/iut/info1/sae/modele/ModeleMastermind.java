@@ -16,6 +16,7 @@ public class ModeleMastermind {
     int[] nbDeCouleurBienPlace;
     String[] combinaisonCouleurJ1 = new String[TAILLE_COMBINAISON];
     String[] combinaisonCouleurJ2 = new String[TAILLE_COMBINAISON];
+    String[] tamponCombinaisonCouleurJ1 = new String[TAILLE_COMBINAISON];
     boolean finPartie = false;
 
 
@@ -29,6 +30,9 @@ public class ModeleMastermind {
     /*
     while (!finPartie) {
     */
+        // initialisation du tampon des couleurs du j1 pour travailler dessus sans modifier le reel code couleur
+        tamponCombinaisonCouleurJ1[] = combinaisonCouleurJ1[];
+    
         // Selection des couleurs pour le J2
         // TODO : selectionner les couleurs en cochant les cases dans une liste deroulante sur chaque cases vide
         
@@ -43,17 +47,18 @@ public class ModeleMastermind {
         // bien placé
         for(int i = 0; i<TAILLE_COMBINAISON-1; i++){
             if (combinaisonCouleurJ1[i] == combinaisonCouleurJ2[i]) {
-                combinaisonCouleurJ2 = null;
+                combinaisonCouleurJ2[i] = null;
+                tamponCombinaisonCouleurJ1[i] = null;
                 nbDeCouleurBienPlace[nbDeCoup]++;
             }
         }
         //mal placé
-        //programme fonctionne mais il y a un probleme dans un cas de figure precis et je le regle plus tard la j'ai un rdv urgent
         for(int i = 0; i<TAILLE_COMBINAISON-1; i++){
             if (combinaisonCouleurJ2[i] != null) {
                 for(int j = 0; j<TAILLE_COMBINAISON-1; j++){
                     if (combinaisonCouleurJ2[i] == combinaisonCouleurJ1[j]) {
-                        combinaisonCouleurJ2 = null;
+                        combinaisonCouleurJ2[i] = null;
+                        tamponCombinaisonCouleurJ1[j] = null;
                         nbDeCouleurMalPlace[nbDeCoup]++;
                     }
                 }
