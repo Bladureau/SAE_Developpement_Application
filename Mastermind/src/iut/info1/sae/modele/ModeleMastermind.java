@@ -49,8 +49,8 @@ public class ModeleMastermind {
             //verification des 2 codes couleur ...
             // ... bonne couleur et bien place
             System.out.println("verification des bonnes couleurs bien place : ");
-            for(i = 0; i<TAILLE_COMBINAISON-1; i++){
-                System.out.println("verification de la " + i + "eme couleur");
+            for(i = 0; i<TAILLE_COMBINAISON; i++){
+                System.out.println("verification de la " + i+1 + "eme couleur");
                 if (combinaisonCouleurJ1[i] == combinaisonCouleurJ2[i]) {
                     System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est bien place");
                     combinaisonCouleurJ2[i] = null;
@@ -59,15 +59,15 @@ public class ModeleMastermind {
                 } else {
                     System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est fausse");
                 }
-                System.out.println("nombre de couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup] + " \nfin de la " + i + "eme couleur");
+                System.out.println("nombre de couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup] + " \nfin de la " + i+1 + "eme couleur");
             }
             // ... bonne couleur mais mal place
             System.out.println("verification des bonnes couleurs mal place : ");
-            for(i = 0; i < TAILLE_COMBINAISON-1; i++){
-                System.out.println("verification de la " + i + "eme couleur");
+            for(i = 0; i < TAILLE_COMBINAISON; i++){
+                System.out.println("verification de la " + i+1 + "eme couleur");
                 if (combinaisonCouleurJ2[i] != null) {
-                    for(int j = 0; j<TAILLE_COMBINAISON-1; j++){
-                        System.out.println("comparaison de la " + combinaisonCouleurJ2[i] + "eme couleur avec toutes les couleurs du J1");
+                    for(int j = 0; j<TAILLE_COMBINAISON; j++){
+                        System.out.println("comparaison de la " + combinaisonCouleurJ2[i] + " couleur avec toutes les couleurs du J1");
                         if (combinaisonCouleurJ2[i] == combinaisonCouleurJ1[j]) {
                             System.out.println("la couleur " + combinaisonCouleurJ2[i] + " est presente");
                             combinaisonCouleurJ2[i] = null;
@@ -102,5 +102,5 @@ public class ModeleMastermind {
             */
             
                 
-        }
+    }
 }
