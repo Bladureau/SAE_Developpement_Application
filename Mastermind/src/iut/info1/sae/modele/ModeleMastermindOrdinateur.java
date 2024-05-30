@@ -22,10 +22,10 @@ public class ModeleMastermindOrdinateur {
         String[] tamponCombinaisonCouleurOrdinateur = new String[TAILLE_COMBINAISON];
         //boolean finPartie = false;
         boolean J1 = false;
-        String nomJ1;
+        String nomJ1 = "Lucas";
 
 
-        // combinaison que le joueur 1 choisi
+        // combinaison que l'oridinateur choisi
         combinaisonCouleurOrdinateur[0] = "bleu";
         combinaisonCouleurOrdinateur[1] = "rose";
         combinaisonCouleurOrdinateur[2] = "blanc";
