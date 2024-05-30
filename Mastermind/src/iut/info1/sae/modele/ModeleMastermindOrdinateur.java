@@ -37,7 +37,9 @@ public class ModeleMastermindOrdinateur {
             nbDeCoup++;
 */
             // initialisation du tampon des couleurs de l'Ordinateur pour travailler dessus sans modifier le reel code couleur
-            tamponCombinaisonCouleurOrdinateur = combinaisonCouleurOrdinateur;
+            for (i = 0; i<TAILLE_COMBINAISON; i++){
+                tamponCombinaisonCouleurOrdinateur[i] = combinaisonCouleurOrdinateur[i];
+            }
         
             // Selection des couleurs pour le J1
             // TODO : selectionner les couleurs en cochant les cases dans une liste deroulante sur chaque cases vide
