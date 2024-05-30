@@ -29,7 +29,6 @@ public class Mastermind extends Application {
      * des clics de l'utilisateur
      */
     private static Stage fenetrePrincipale;
-
     
     /**
      * Permet de modifier la scène de la fênetre principale
@@ -67,15 +66,10 @@ public class Mastermind extends Application {
         fenetrePrincipale.setScene(sceneTroisiemePage);
     }
 
-    public static void creerSauvegarde() {
-        GestionFichier.ecritureFichier();
-    }
-
     public static void supprimerSauvergarde() {
         GestionFichier.effacerFichier();
         fenetrePrincipale.setScene(sceneDeuxiemePage);
     }
-
     
     @Override
     public void start(Stage primaryStage) {
