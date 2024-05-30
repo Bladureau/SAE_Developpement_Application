@@ -1,5 +1,12 @@
 package iut.info1.sae.controleur;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+
+import iut.info1.sae.GestionFichier;
 import iut.info1.sae.Mastermind;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,6 +15,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 
 public class ControleurPage2 {
 
@@ -37,11 +45,13 @@ public class ControleurPage2 {
         Mastermind.activerPremierePage();
     }
 
-    public TextField getNomJoueur1() {
-        return tfJoueur1;
-    }
-
-    public TextField getNomJoueur2() {
-        return tfJoueur2;
+    @SuppressWarnings("unchecked")
+    @FXML 
+    void btnSuivant(ActionEvent event) {
+        JSONObject sauvegarde = new JSONObject();
+        sauvegarde.put("Joueur1", tfJoueur1.getText());
+        sauvegarde.put("Joueur2", tfJoueur2.getText());
+        GestionFichier.sauvergarde(sauvegarde);
+        //Mastermind.activerTroisiemePage();
     }
 }
