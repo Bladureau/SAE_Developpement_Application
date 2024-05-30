@@ -2,7 +2,7 @@ package iut.info1.sae.modele;
 
 public class ModeleMastermindOrdinateur {
 
-    private static final String[] COULEURS = {""};
+    private static final String[] COULEURS = {"Bleu", "Rose", "Jaune", "Rouge", "Orange", "Marron", "Gris", "Blanc", "Vert", "Violet"};
 
     public static void main(String[] args) {
         // TODO : definir toutes les couleurs
