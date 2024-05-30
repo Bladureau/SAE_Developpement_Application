@@ -19,10 +19,9 @@ public class ModeleMastermindJcJ {
         int[] nbDeCouleurBienPlace = new int[NOMBRE_MAX_DE_COUP];
         String[] combinaisonCouleurJ1 = new String[TAILLE_COMBINAISON];
         String[] combinaisonCouleurJ2 = new String[TAILLE_COMBINAISON];
-        String[] tamponCombinaisonCouleurJ2 = new String[TAILLE_COMBINAISON];
         //boolean finPartie = false;
-        boolean CombinaisonTrouvePourJ1 = false;
-        boolean J2 = false;
+        boolean combinaisonTrouvePourJ1 = false;
+        boolean combinaisonTrouvePourJ2 = false;
         // supprimer la valeur des noms quand la vue sera opperationnelle
         String nomJ1 = "Lucas";
         String nomJ2 = "patoche";
@@ -39,11 +38,7 @@ public class ModeleMastermindJcJ {
         while (!finPartie) {
             nbDeCoup++;
 */
-            // initialisation du tampon des couleurs de l'Ordinateur pour travailler dessus sans modifier le reel code couleur
-            for (i = 0; i<TAILLE_COMBINAISON; i++){
-                tamponCombinaisonCouleurJ2[i] = combinaisonCouleurJ2[i];
-            }
-        
+            
             // Selection des couleurs pour le J1
             // TODO : selectionner les couleurs en cochant les cases dans une liste deroulante sur chaque cases vide
             
@@ -53,49 +48,18 @@ public class ModeleMastermindJcJ {
             combinaisonCouleurJ1[2] = "rose";
             combinaisonCouleurJ1[3] = "rose";
 
-
-            //verification des 2 codes couleur ...
-            // ... bonne couleur et bien place
-            //System.out.println("verification des bonnes couleurs bien place : ");
-            for(i = 0; i<TAILLE_COMBINAISON; i++){
-                //System.out.println("verification de la " + i + "eme couleur");
-                if (combinaisonCouleurOrdinateur[i] == combinaisonCouleurJ1[i]) {
-                    //System.out.println("la couleur " + combinaisonCouleurJ1[i] + " est bien place");
-                    combinaisonCouleurJ1[i] = null;
-                    tamponCombinaisonCouleurOrdinateur[i] = null;
-                    nbDeCouleurBienPlace[nbDeCoup]++;
-                } else {
-                    //System.out.println("la couleur " + combinaisonCouleurJ1[i] + " est fausse");
-                }
-                //System.out.println("nombre de couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup] + " \nfin de la " + i + "eme couleur");
-            }
-            // ... bonne couleur mais mal place
-            //System.out.println("verification des bonnes couleurs mal place : ");
-            for(i = 0; i < TAILLE_COMBINAISON; i++){
-                //System.out.println("verification de la " + i + "eme couleur");
-                if (combinaisonCouleurJ1[i] != null) {
-                    for(int j = 0; j<TAILLE_COMBINAISON; j++){
-                        //System.out.println("comparaison de la " + combinaisonCouleurJ1[i] + " couleur avec toutes les couleurs de l'Ordinateur");
-                        if (combinaisonCouleurJ1[i] == combinaisonCouleurOrdinateur[j]) {
-                            //System.out.println("la couleur " + combinaisonCouleurJ1[i] + " est presente");
-                            combinaisonCouleurJ1[i] = null;
-                            tamponCombinaisonCouleurOrdinateur[j] = null;
-                            nbDeCouleurMalPlace[nbDeCoup]++;
-                        } else {
-                            //System.out.println("la couleur " + combinaisonCouleurJ1[i] + " n'est pas presente");
-                        }
-                    }
-                } else {
-                    //System.out.println(combinaisonCouleurJ1[i] + "couleur deja verifie");
-                }
-                //System.out.println("nombre de bonne couleur mal place : " + nbDeCouleurMalPlace[nbDeCoup] + " \nfin de la " + i + "eme couleur");
-            }
-
-            //System.out.println("couleur bien place : " + nbDeCouleurBienPlace[nbDeCoup]);
-            //System.out.println("couleur mal place : " + nbDeCouleurMalPlace[nbDeCoup] + " \nfin de la verification");
+            //TODO : fenetre montrant le code couleur du J1 et du J2 et le J2 doit mettre dans 2 cases 0,1,2,3,4 ou 5 pour representer le nombre de bonne couleur bien et mal place
 
 
-            
+
+
+        
+            // !!!!!!!!!!!!!!!!!!!!!pas du tout fini !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+        
 /*
             // verification d'une potentielle fin de manche pour le J1
             
@@ -107,8 +71,8 @@ public class ModeleMastermindJcJ {
             }
         }
 */
-        // calcul des pts a la fin de la premiere manche
-        if (J1 == true) {
+        // calcul des pts a la fin de la partie
+        if (combinaisonTrouvePourJ1 == true && combinaisonTrouvePourJ2 == false) {
             // faire une page a la place des system.out.println
             System.out.println("Bravo " + nomJ1 + ", vous venez de remporter la partie");
             if (nbDeCoup == 1) {
@@ -116,6 +80,16 @@ public class ModeleMastermindJcJ {
             } else {
                 System.out.println("Il vous a fallu " + nbDeCoup + " coups pour trouver la bonne suite de couleur");
             }
+        } else if (combinaisonTrouvePourJ2 == true && combinaisonTrouvePourJ1 == false) {
+            // faire une page a la place des system.out.println
+            System.out.println("Bravo " + nomJ2 + ", vous venez de remporter la partie");
+            if (nbDeCoup == 1) {
+                System.out.println("Il vous a fallu seulement un seul coup pour trouver la bonne suite de couleur");
+            } else {
+                System.out.println("Il vous a fallu " + nbDeCoup + " coups pour trouver la bonne suite de couleur");
+            }
+
+            // a continuer
         } else {
             System.out.println("Vous n'avez malheuresement pas trouvé la bonne suite de couleur");
             System.out.println("la bonne suite de couleur etait : ");
