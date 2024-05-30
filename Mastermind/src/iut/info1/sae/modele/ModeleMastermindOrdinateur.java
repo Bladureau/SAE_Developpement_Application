@@ -15,8 +15,8 @@ public class ModeleMastermindOrdinateur {
         int nbDeCoup = 0;
         int nbDeManche = 0;
         int i = 0;
-        int[] nbDeCouleurMalPlace = {0};
-        int[] nbDeCouleurBienPlace = {0};
+        int[] nbDeCouleurMalPlace = new int[NOMBRE_MAX_DE_COUP];
+        int[] nbDeCouleurBienPlace = new int[NOMBRE_MAX_DE_COUP];
         String[] combinaisonCouleurOrdinateur = new String[TAILLE_COMBINAISON];
         String[] combinaisonCouleurJ1 = new String[TAILLE_COMBINAISON];
         String[] tamponCombinaisonCouleurOrdinateur = new String[TAILLE_COMBINAISON];
