@@ -4,7 +4,7 @@ public class ModeleMastermindOrdinateur {
 
     private static final String[] COULEURS = {"Bleu", "Rose", "Jaune", "Rouge", "Orange", "Marron", "Gris", "Blanc", "Vert", "Violet"};
 
-    public static void main(String[] args) {
+    public static void Ordinateur {
         // TODO : definir toutes les couleurs
 
         // initialisation des constantes
