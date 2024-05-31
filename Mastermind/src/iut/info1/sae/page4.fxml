@@ -39,27 +39,51 @@
             <CheckBox fx:id="toutSelectionner" layoutX="163.0" layoutY="107.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="165.0" text="Tout selectionner " textAlignment="CENTER" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="317.0" layoutY="221.0" prefHeight="129.0" prefWidth="181.0" style="-fx-background-color: grey;">
+      <AnchorPane layoutX="207.0" layoutY="221.0" prefHeight="129.0" prefWidth="181.0" style="-fx-background-color: grey;">
          <children>
-            <Label layoutX="8.0" layoutY="31.0" text="Nombre de Tentatives :">
+            <Label layoutX="8.0" layoutY="14.0" text="Nombre de Tentatives :">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nombreTentatives" layoutX="16.0" layoutY="81.0" />
+            <TextField fx:id="nombreTentatives" layoutX="16.0" layoutY="58.0" />
          </children>
       </AnchorPane>
-      <Button fx:id="valider" layoutX="252.0" layoutY="350.0" mnemonicParsing="false" text="Valider" />
-      <AnchorPane layoutX="58.0" layoutY="221.0" prefHeight="129.0" prefWidth="181.0" style="-fx-background-color: grey;">
+      <Button fx:id="valider" layoutX="252.0" layoutY="360.0" mnemonicParsing="false" text="Valider" />
+      <AnchorPane layoutX="58.0" layoutY="221.0" prefHeight="129.0" prefWidth="138.0" style="-fx-background-color: grey;">
          <children>
-            <CheckBox fx:id="bois" layoutX="48.0" layoutY="48.0" mnemonicParsing="false" text="Bois" />
-            <CheckBox fx:id="foret" layoutX="48.0" layoutY="75.0" mnemonicParsing="false" text="Forêt" />
-            <CheckBox fx:id="tropical" layoutX="48.0" layoutY="103.0" mnemonicParsing="false" text="Tropical" />
-            <Label layoutX="38.0" layoutY="14.0" text="Fonds de jeux :">
+            <CheckBox fx:id="bois" layoutX="24.0" layoutY="46.0" mnemonicParsing="false" text="Bois" />
+            <CheckBox fx:id="foret" layoutX="24.0" layoutY="73.0" mnemonicParsing="false" text="Forêt" />
+            <CheckBox fx:id="tropical" layoutX="24.0" layoutY="101.0" mnemonicParsing="false" text="Tropical" />
+            <Label layoutX="14.0" layoutY="12.0" text="Fonds de jeux :">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="399.0" layoutY="221.0" prefHeight="129.0" prefWidth="99.0" style="-fx-background-color: grey;">
+         <children>
+            <RadioButton fx:id="quatre" layoutX="36.0" layoutY="56.0" mnemonicParsing="false" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="14.0" layoutY="6.0" text="Choix nombre">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="23.0" text="de couleurs : ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="cinq" layoutX="36.0" layoutY="82.0" mnemonicParsing="false" text="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
          </children>
       </AnchorPane>
    </children>
