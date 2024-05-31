@@ -14,41 +14,47 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="145.0" layoutY="37.0" text="Paramètres de Partie : ">
+      <Label layoutX="145.0" layoutY="24.0" text="Paramètres de Partie : ">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="75.0" layoutY="90.0" prefHeight="267.0" prefWidth="141.0" style="-fx-background-color: grey;" AnchorPane.leftAnchor="75.0">
+      <AnchorPane layoutX="58.0" layoutY="74.0" prefHeight="138.0" prefWidth="440.0" style="-fx-background-color: grey;" AnchorPane.leftAnchor="58.0">
          <children>
-            <CheckBox layoutX="24.0" layoutY="56.0" mnemonicParsing="false" text="Bleu" />
-            <CheckBox layoutX="24.0" layoutY="86.0" mnemonicParsing="false" text="Rouge" />
-            <CheckBox layoutX="24.0" layoutY="117.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" text="Vert" />
-            <CheckBox layoutX="24.0" layoutY="147.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" text="Jaune" />
-            <CheckBox layoutX="24.0" layoutY="179.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" text="Rose" />
-            <CheckBox layoutX="24.0" layoutY="208.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" text="Blanc" />
-            <CheckBox layoutX="24.0" layoutY="236.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" text="Noir" />
-            <Label layoutX="33.0" layoutY="25.0" text="Couleurs :">
+            <CheckBox fx:id="bleu" layoutX="31.0" layoutY="48.0" mnemonicParsing="false" style="-fx-mark-color: blue;" text="Bleu" textFill="#0f19cd" />
+            <CheckBox fx:id="rouge" layoutX="126.0" layoutY="77.0" mnemonicParsing="false" style="-fx-mark-color: red;" text="Rouge" textFill="#ff4646" />
+            <CheckBox fx:id="vert" layoutX="355.0" layoutY="77.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" style="-fx-mark-color: green;" text="Vert" textFill="#66fc55" />
+            <CheckBox fx:id="jaune" layoutX="206.0" layoutY="77.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" style="-fx-mark-color: yellow;" text="Jaune" textFill="#ffe15e" />
+            <CheckBox fx:id="rose" layoutX="206.0" layoutY="48.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" style="-fx-mark-color: pink;" text="Rose" textFill="#ff56d8" />
+            <CheckBox fx:id="blanc" layoutX="281.0" layoutY="48.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" style="-fx-mark-color: white;" text="Blanc" textFill="WHITE" />
+            <CheckBox fx:id="violet" layoutX="31.0" layoutY="77.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" style="-fx-mark-color: violet;" text="Violet" textFill="#b121ff" />
+            <Label layoutX="192.0" layoutY="14.0" text="Couleurs :">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-         </children></AnchorPane>
-      <AnchorPane layoutX="308.0" layoutY="272.0" prefHeight="85.0" prefWidth="181.0" style="-fx-background-color: grey;">
-         <children>
-            <Label layoutX="8.0" layoutY="14.0" text="Nombre de Tentatives :">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </Label>
-            <TextField layoutX="16.0" layoutY="43.0" />
+            <CheckBox fx:id="orange" layoutX="126.0" layoutY="48.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="64.0" style="-fx-mark-color: orange;" text="Orange" textFill="#e16a0f" />
+            <CheckBox fx:id="marron" layoutX="281.0" layoutY="77.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="64.0" style="-fx-mark-color: brown;" text="Marron" textFill="#803030" />
+            <CheckBox fx:id="gris" layoutX="355.0" layoutY="48.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" style="-fx-mark-color: gray;" text="Gris" textFill="#dacbcb" />
+            <CheckBox fx:id="toutSelectionner" layoutX="163.0" layoutY="107.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="165.0" text="Tout selectionner " textAlignment="CENTER" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="308.0" layoutY="90.0" prefHeight="149.0" prefWidth="181.0" style="-fx-background-color: grey;">
+      <AnchorPane layoutX="317.0" layoutY="221.0" prefHeight="129.0" prefWidth="181.0" style="-fx-background-color: grey;">
          <children>
-            <CheckBox layoutX="48.0" layoutY="48.0" mnemonicParsing="false" text="Bois" />
-            <CheckBox layoutX="48.0" layoutY="75.0" mnemonicParsing="false" text="Forêt" />
-            <CheckBox layoutX="48.0" layoutY="103.0" mnemonicParsing="false" text="Tropical" />
+            <Label layoutX="8.0" layoutY="31.0" text="Nombre de Tentatives :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nombreTentatives" layoutX="16.0" layoutY="81.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="252.0" layoutY="350.0" mnemonicParsing="false" text="Valider" />
+      <AnchorPane layoutX="58.0" layoutY="221.0" prefHeight="129.0" prefWidth="181.0" style="-fx-background-color: grey;">
+         <children>
+            <CheckBox fx:id="bois" layoutX="48.0" layoutY="48.0" mnemonicParsing="false" text="Bois" />
+            <CheckBox fx:id="foret" layoutX="48.0" layoutY="75.0" mnemonicParsing="false" text="Forêt" />
+            <CheckBox fx:id="tropical" layoutX="48.0" layoutY="103.0" mnemonicParsing="false" text="Tropical" />
             <Label layoutX="38.0" layoutY="14.0" text="Fonds de jeux :">
                <font>
                   <Font name="System Bold" size="15.0" />
@@ -56,6 +62,5 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button layoutX="242.0" layoutY="357.0" mnemonicParsing="false" text="Valider" />
    </children>
 </AnchorPane>
