@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="336.0" layoutY="25.0" text="Bienvenue sur Rilabe">
+         <font>
+            <Font name="Wingdings 2" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="97.0" text="Rilabe est un Mastermind en ligne dans lequel vous pourrez choisir de jouer contre un ami à vous ou un ordinateur." />
+      <Label layoutX="36.0" layoutY="142.0" text="Dans ce Mastermind, pour gagner il suffit de trouver une suite de couleurs choisi par l’adversaire en un minimum de coups." />
+      <Label layoutX="9.0" layoutY="125.0" text="But du jeu :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="170.0" text="Règles du jeu :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="196.0" text="Pour jouer, un premier joueur (Arthur) va choisir 4 ou 5 couleurs en fonction des paramètres de la partie. Une fois cette première étape finie, " />
+      <Label layoutX="36.0" layoutY="213.0" text="c’est au second joueur (Jules) de jouer et d’essayer de trouver la suite qu’ Arthur a choisi.  Pour se faire, il devra sélectionner une couleur " />
+      <Label layoutX="36.0" layoutY="230.0" text="pour chaque trou vide dans la ligne la plus basse pas encore utilisée parmis toutes les couleurs disponibles. Des que Jules a validé sa " />
+      <Label layoutX="36.0" layoutY="247.0" text="combinaison de couleur, Arthur indique le nombre de bonne couleur mal placée et de bonne couleur bien placée et uniquement le nombre." />
+      <Label layoutX="53.0" layoutY="283.0" prefHeight="17.0" prefWidth="288.0" text="Exemple :                             ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="300.0" text="Suite de couleur d’Arthur : " />
+      <Label layoutX="311.0" layoutY="300.0" text=" Bleu, Rose, Bleu, Gris, Vert" />
+      <Label layoutX="70.0" layoutY="317.0" text="Suite de couleur de Jules au premier tour : " />
+      <Label layoutX="311.0" layoutY="317.0" text="Jaune, Blanc, Bleu, Vert, Violet" />
+      <Label layoutX="69.0" layoutY="334.0" prefHeight="17.0" prefWidth="773.0" text="Dans l’exemple ci-dessus Arthur doit indiquer sur l’application qu’il y a 1 bonne couleur bien placée (Bleu) et 1 bonne couleur mal placée (Vert)." />
+      <Label layoutX="36.0" layoutY="361.0" text="A la fin d’une tentative il y a 3 possibilités : " />
+      <Label layoutX="61.0" layoutY="387.0" text="- Jules trouves la bonne combinaison de couleur et la manche se finit il faut donc " />
+      <Label layoutX="69.0" layoutY="404.0" text="inverser les roles (Jules cree une suite de couleur et Arthur doit trouver la cominaison)" />
+      <Label layoutX="61.0" layoutY="421.0" text="- Jules ne trouves pas la bonne combinaison et la partie continue car il lui reste des tentatives" />
+      <Label layoutX="61.0" layoutY="438.0" text="- Jules ne trouves pas la bonne combinaison et la manche se termine car il ne lui reste " />
+      <Label layoutX="68.0" layoutY="455.0" text="plus de tentative (Mais la partie n’est pas encore terminé car c’est à Arthur de deviner " />
+      <Label layoutX="69.0" layoutY="472.0" text="la bonne combinaison)" />
+      <Label layoutX="36.0" layoutY="500.0" prefHeight="17.0" prefWidth="640.0" text="Une fois que les 2 manches sont terminées, l’application vérifie qui est le vainqueur et la aussi il y a plusieurs possibilité : " />
+      <Label layoutX="60.0" layoutY="526.0" text="- Jules a réussi à trouver la combinaison mais pas Arthur donc Jules est déclaré vainqueur (et inversement si Arthur trouve mais pas Jules)" />
+      <Label layoutX="60.0" layoutY="543.0" text="- Jules trouve la combinaison et Arthur aussi mais Jules trouve la combinaison en moins de coups qu’Arthur. Jules est donc" />
+      <Label layoutX="65.0" layoutY="560.0" prefHeight="17.0" prefWidth="444.0" text=" le vainqueur de la partie (inversement si c’est Arthur qui trouve plus rapidement)" />
+      <Label layoutX="60.0" layoutY="577.0" text="- Jules et Arthur mettent le même nombre de coups pour trouver la combinaison ou ils ne la trouvent pas tous les deux. " />
+      <Label layoutX="67.0" layoutY="594.0" prefHeight="17.0" prefWidth="432.0" text="Dans ce cas, il y a un calcul de points en fonction des résultats à chaque manche." />
+      <Label layoutX="496.0" layoutY="594.0" text=" Chaque bonne couleur mal placée valent 1 point" />
+      <Label layoutX="65.0" layoutY="611.0" text=" et chaque bonne couleur bien placée en valent 2." />
+      <Label layoutX="334.0" layoutY="611.0" prefHeight="17.0" prefWidth="537.0" text="Le calcul se fait automatiquement et le vainqueur s’affiche à l'écran en affichant le résultat de chacun." />
+      <Label layoutX="35.0" layoutY="645.0" text="Pour jouer contre l’ordinateur, l’ordinateur choisi une suite de couleur au hasard et vous devez seulement trouver celle-ci." />
+      <Label layoutX="34.0" layoutY="662.0" prefHeight="17.0" prefWidth="665.0" text=" L’ordinateur se charge tout seul de vous indiquer le nombre de bonne couleur mal placée et de bonne couleur bien placée." />
+      <Label layoutX="32.0" layoutY="679.0" text=" A la fin de la partie vous gagnez seulement si vous avez reussi a trouver la suite de couleur de l’ordinateur. Il n'y a donc pas de système de points." />
+      <Label layoutX="8.0" layoutY="702.0" text="Option de la partie : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="725.0" text="Il y a plusieurs options dans ce Jeu, effectivement nous pouvons choisir différentes de couleurs: " />
+      <Label layoutX="65.0" layoutY="752.0" text="Bleu, Rouge, Vert, Jaune, Orange, Gris, Marron,Violet, Rose, Blanc" />
+      <Label layoutX="36.0" layoutY="776.0" text="Ensuite nous avons l’option de choisir le fond du plateau : " />
+      <Label layoutX="65.0" layoutY="803.0" prefHeight="17.0" prefWidth="105.0" text="Tropical, Bois, Forêt" />
+      <Label layoutX="35.0" layoutY="829.0" prefHeight="17.0" prefWidth="484.0" text="Pour finir, Il y a le nombre de tentatives (8-12) et le nombre de d'emplacement (4 ou 5)." />
+      <Label layoutX="11.0" layoutY="866.0" text="Crédits : ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="891.0" text="Capzozo24" />
+      <Label layoutX="9.0" layoutY="908.0" text="GS | romeo" />
+      <Label layoutX="9.0" layoutY="925.0" text="Jojo" />
+      <Label layoutX="8.0" layoutY="942.0" prefHeight="17.0" prefWidth="105.0" text="Lebaptoubgdu12" />
+   </children>
+</AnchorPane>
