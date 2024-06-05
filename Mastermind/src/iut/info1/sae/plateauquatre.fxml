@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="484.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="762.0" fitWidth="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image3.png" />
+         </image>
+      </ImageView>
+      <Circle layoutX="90.0" layoutY="135.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="135.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="119.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="145.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="119.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="145.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="184.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="210.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="210.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="184.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="278.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="252.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="278.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="252.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="339.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="313.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="339.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="313.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="386.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="408.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="408.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="386.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="475.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="449.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="475.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="449.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="517.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="517.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="543.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="543.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="584.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="584.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="607.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="607.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="135.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="135.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="200.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="200.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="200.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="200.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="268.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="268.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="268.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="268.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="329.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="329.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="329.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="329.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="398.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="398.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="398.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="398.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="465.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="465.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="465.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="465.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="527.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="527.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="527.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="527.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="594.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="594.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="594.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="594.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="660.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="660.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="660.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="660.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="90.0" layoutY="725.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="219.0" layoutY="725.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="725.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="284.0" layoutY="725.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="672.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="649.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="672.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="649.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="714.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="737.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="408.0" layoutY="737.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="448.0" layoutY="714.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
